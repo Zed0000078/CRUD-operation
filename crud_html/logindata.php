@@ -28,6 +28,8 @@ if(mysqli_num_rows($result0)>0){
         ?>
         <script>
             alert("Passoword not matched")
+            window.location.href="login.php"
+
         </script>
     <?php
     }
