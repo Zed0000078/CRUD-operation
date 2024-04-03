@@ -17,13 +17,9 @@ if(mysqli_num_rows($result0)>0){
        $_SESSION["name"]=$row['username'];
     //    session_unset();
     //    session_destroy() ;  
-    ?>
-    <script>
-        alert("logged in");
-        window.location.href="../crud_html"
-    </script>
+    echo <script>alert("logged in")</script>;
+    echo <script>window.location.href="../crud_html"</script>;
 
-<?php
     }else{
         ?>
         <script>
