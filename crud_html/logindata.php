@@ -21,21 +21,12 @@ if(mysqli_num_rows($result0)>0){
     echo <script>window.location.href="../crud_html"</script>;
 
     }else{
-        ?>
-        <script>
-            alert("Passoword not matched")
-            window.location.href="login.php"
-
-        </script>
-    <?php
+        echo '<script>alert("Passoword not matched")</script>';
+        echo '<script>window.location.href="login.php"</script>';
     }
    
 }else{
-    ?>
-        <script>
-            alert("Email does not exist.")
-        </script>
-    <?php
+        echo '<script>alert("Email does not exist.")</script>';
 
 }
         
