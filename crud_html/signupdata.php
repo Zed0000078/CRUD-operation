@@ -11,13 +11,9 @@
 
         if($password == $confirmpassword){
             if(mysqli_num_rows($result0)>0){
-                ?>
-            <script>
-                //Existing email should not create an account
-                alert("This email is already exist.");
-                window.location.href = " http://localhost/crud3/crud_html/signup.php"
-                </script>
-            <?php
+            //Existing email should not create an account
+            echo '<script>alert("This email is already exist.");</script>';
+            echo '<script>window.location.href = " http://localhost/crud3/crud_html/signup.php"</script>';
         }else{
             $sql = "INSERT INTO user(username, email, passwords) VALUES ('{$username}', '{$email}', '{$password}')";
             $result = mysqli_query($conn, $sql) or die("Connection is not established");
