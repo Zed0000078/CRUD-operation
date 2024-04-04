@@ -13,9 +13,8 @@ $sql = "UPDATE student SET sname='{$stu_name}', saddress='{$stu_address}', sclas
 $result = mysqli_query($conn, $sql) or die("Query Unsuccessful");
 
 // header("Location : http://localhost/crud3/crud_html/index.php");
-?>
-<script>window.location.href = "http://localhost/crud3/crud_html/index.php"</script>
-<?php
+
+echo '<script>window.location.href = "http://localhost/crud3/crud_html/index.php"</script>';
 
 
 mysqli_close($conn);
