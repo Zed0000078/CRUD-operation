@@ -157,7 +157,7 @@ button:hover {
         <label class="signup__label" for="password">Password</label>
     </div>
     
-    <input type="submit" value="submit" name="signup">
+    <input class="button" type="submit" value="submit" name="signup">
 
     </form>
 <!--     
